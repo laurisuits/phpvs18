@@ -22,7 +22,27 @@ echo '<hr>';
 // tüübikontroll
 echo gettype($sone);
 echo '<br>';
-$summa = $sone + $sone;
+$summa = $sone . $sone;
 settype($summa, 'string');
 echo gettype($summa);
-echo 'Summa = '.$summa.'<br>'; 
+echo 'Summa = '.$summa.'<br>';
+?>
+<?php
+
+//matemaatilised ja võtdlusoperaatorid
+$arv1 = 42;
+$arv2 = 11;
+echo '<h4>Matemaatilised operaatorid</h4>';
+echo $arv1. ' + '.$arv2.' = '.($arv1 + $arv2).'<br>';
+echo $arv1. ' - '.$arv2.' = '.($arv1 - $arv2).'<br>';
+echo $arv1. ' * '.$arv2.' = '.($arv1 * $arv2).'<br>';
+echo $arv1. ' / '.$arv2.' = '.($arv1 / $arv2).'<br>';
+echo $arv1. ' % '.$arv2.' = '.($arv1 % $arv2).'<br>';
+echo '<h4>Võrdlus operaatorid</h4>';
+echo $arv1. ' == '.$arv2.' on '.($arv1 == $arv2).'<br>';
+echo $arv1. ' != '.$arv2.' on '.($arv1 != $arv2).'<br>';
+echo $arv1. ' <= '.$arv2.' on '.($arv1 <= $arv2).'<br>';
+echo $arv1. ' >= '.$arv2.' on '.($arv1 >= $arv2).'<br>';
+echo $arv1. ' < '.$arv2.' on '.($arv1 < $arv2).'<br>';
+echo $arv1. ' > '.$arv2.' on '.($arv1 > $arv2).'<br>';
+
